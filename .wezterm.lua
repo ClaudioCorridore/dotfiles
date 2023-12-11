@@ -14,7 +14,7 @@ config.color_scheme = 'Night Owl (Gogh)'
 
 config.font = wezterm.font_with_fallback {
   { family = 'Monaspace Krypton', weight = 'Medium', harfbuzz_features = { 'ss01=0', 'ss02=0', 'ss03=0', 'ss04=0', 'ss05=0', 'ss06=0', 'ss07=0', 'ss08=0', 'calt=1', 'dlig=0' } },
-  { family = 'MonaspiceKr NF', weight = 'Medium' },
+  { family = 'MonaspiceKr NF',    weight = 'Medium' },
   'JetBrains Mono'
 }
 
@@ -32,5 +32,15 @@ config.window_padding = {
 
 config.default_cursor_style = 'BlinkingUnderline'
 
-return config
+config.visual_bell = {
+  fade_in_duration_ms = 50,
+  fade_out_duration_ms = 50,
+  target = 'CursorColor',
+}
 
+config.audible_bell = "Disabled"
+config.colors = {
+  visual_bell = 'red',
+}
+
+return config
