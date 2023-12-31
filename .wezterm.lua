@@ -29,6 +29,7 @@ config.window_padding = {
   top = '0',
   bottom = '0.5cell',
 }
+config.window_decorations = 'RESIZE'
 
 config.default_cursor_style = 'BlinkingUnderline'
 
@@ -44,3 +45,4 @@ config.colors = {
 }
 
 return config
+
