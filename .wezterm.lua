@@ -44,5 +44,6 @@ config.colors = {
   visual_bell = 'red',
 }
 
-return config
+config.default_prog = { '/usr/local/bin/bash', '-l', '-c', '/usr/local/bin/tmux new-session -A -s main' }
 
+return config
